@@ -264,7 +264,7 @@ export default function Projects() {
           </AnimatePresence>
         </motion.div>
 
-        {/* Instruction */}
+        {/* Instruction
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={viewportOnce}
           className="mt-10 text-center p-5 rounded-xl border" style={{ borderColor: "rgba(57,197,87,0.2)", background: "rgba(57,197,87,0.04)" }}>
           <p className="text-xs font-mono" style={{ color: "#888" }}>
@@ -274,7 +274,7 @@ export default function Projects() {
             </code>{" "}
             and update <code className="px-1.5 py-0.5 rounded text-xs" style={{ background: "#fff", border: "1px solid #e8e8e8", color: "#555" }}>portfolioData.js</code>
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       <AnimatePresence>
