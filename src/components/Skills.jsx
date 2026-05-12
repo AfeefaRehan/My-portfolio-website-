@@ -54,13 +54,6 @@ export default function Skills() {
             </div>
           </motion.div>
         </div>
-        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce}
-          transition={{ duration: 0.5, delay: 0.2 }} className="mt-10 card rounded-2xl p-6">
-          <h4 className="font-mono text-xs uppercase tracking-widest mb-4" style={{ color: "#bbb" }}>All Technologies</h4>
-          <div className="flex flex-wrap gap-2">
-            {Object.values(skills).flat().map(s => <span key={s.name} className="tag text-xs">{s.name}</span>)}
-          </div>
-        </motion.div>
       </div>
     </section>
   );
