@@ -15,7 +15,7 @@ export default function Education() {
           <div className="absolute left-5 top-0 bottom-0 w-px" style={{ background: "linear-gradient(to bottom, #39C557, rgba(57,197,87,0.15), transparent)" }} />
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce} className="space-y-7">
             {education.map((edu, i) => {
-              const isGreen = i % 2 === 0;
+              const isGreen = true;
               return (
                 <motion.div key={i} variants={fadeLeft} className="relative pl-16">
                   <div className="absolute left-[14px] top-5" style={{ ...(isGreen ? { } : {}) }}>
