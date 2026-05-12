@@ -67,7 +67,7 @@ export const experience = [
     company: "Finverse Hub, Lahore",
     period: "Feb 2026 – Mar 2026",
     type: "Full-time",
-    color: "gray",
+    color: "green",
     bullets: [
       "Supported daily administrative operations, reporting, and coordination tasks",
       "Maintained records and assisted in organizing operational workflows",
@@ -79,7 +79,7 @@ export const experience = [
     company: "Yousaf School, Lahore",
     period: "May 2025 – Jul 2025",
     type: "Full-time",
-    color: "gray",
+    color: "green",
     bullets: [
       "Delivered computer science lessons and guided students in technical projects",
       "Evaluated student performance and provided structured feedback",
@@ -117,7 +117,7 @@ export const experience = [
     company: "Minhaj University, Lahore",
     period: "Aug 2024 – Oct 2024",
     type: "Full-time",
-    color: "gray",
+    color: "green",
     bullets: [
       "Supported daily administrative operations, reporting, and coordination tasks",
       "Maintained records and assisted in organizing academic and operational workflows",
@@ -129,7 +129,7 @@ export const experience = [
     company: "A.S Solutions, Lahore",
     period: "Feb 2023 – Jan 2024",
     type: "Full-time · Double shifts",
-    color: "gray",
+    color: "green",
     bullets: [
       "Managed high-volume customer interactions while maintaining service quality",
       "Resolved customer issues efficiently, ensuring satisfaction and retention",
@@ -141,7 +141,7 @@ export const experience = [
     company: "International Roadside Assistance — Remote",
     period: "Jan 2022 – Dec 2022",
     type: "Remote",
-    color: "gray",
+    color: "green",
     bullets: [
       "Managed client negotiations and closed deals to achieve business growth targets",
       "Communicated effectively with international clients to resolve issues and build trust",
@@ -204,7 +204,7 @@ export const certifications = [
     title: "ISPR Internship",
     issuer: "Inter-Services Public Relations (ISPR), Pakistan",
     date: "2024",
-    color: "gray",
+    color: "green",
     icon: "🎖️",
     skills: ["Media & Communications", "Operations", "Professional Development"],
   },
@@ -220,7 +220,7 @@ export const certifications = [
     title: "Pitman English Certification",
     issuer: "Pitman Training",
     date: "2023",
-    color: "gray",
+    color: "green",
     icon: "✍️",
     skills: ["Business English", "Communication", "Writing"],
   },
@@ -236,7 +236,7 @@ export const certifications = [
     title: "International Conference Participation",
     issuer: "Multiple Tech Conferences",
     date: "2023–2024",
-    color: "gray",
+    color: "green",
     icon: "🌐",
     skills: ["AI Research", "Networking", "Tech Trends"],
   },
@@ -251,21 +251,15 @@ export const certifications = [
 ];
 
 // ─── Projects ─────────────────────────────────────────────────────────────────
-// HOW TO ADD MEDIA:
-// 1. Drop your images/videos into public/projects/[folder]/
-// 2. Add entries to the `media` array below:
-//    { src: "/projects/geniusplate/screenshot1.png", type: "image", alt: "Homepage" }
-//    { src: "/projects/geniusplate/demo.mp4", type: "video" }
-
 export const projects = [
   {
     id: 1,
     title: "GeniusPlate",
     folder: "geniusplate",
-    category: "Full Stack",
+    category: "MERN Stack",
     color: "green",
-    description: "A live food-tech platform combining smart menu management, online ordering, and restaurant operations — fully deployed and serving real users.",
-    longDescription: "GeniusPlate is a production-grade food-tech web application. It features a dynamic menu system, real-time order management, and a clean customer-facing storefront. Built with modern web technologies and deployed at geniusplate.store.",
+    description: "A live food-tech platform built on MERN Stack — combining smart menu management, online ordering, and restaurant operations, fully deployed and serving real users.",
+    longDescription: "GeniusPlate is a production-grade food-tech web application built on the MERN Stack. It features a dynamic menu system, real-time order management, and a clean customer-facing storefront. Built with modern web technologies and deployed at geniusplate.store.",
     tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
     features: [
       "Live menu with dynamic categories",
@@ -276,76 +270,57 @@ export const projects = [
     ],
     github: "https://github.com/afeefarehan",
     live: "https://www.geniusplate.store/",
-    // Add your screenshots here:
-   media: [
-  { src: "/projects/geniusplate/Screenshot (119).png", type: "image", alt: "GeniusPlate - View 1" },
-  { src: "/projects/geniusplate/Screenshot (120).png", type: "image", alt: "GeniusPlate - View 2" },
-  { src: "/projects/geniusplate/Screenshot (121).png", type: "image", alt: "GeniusPlate - View 3" },
-  { src: "/projects/geniusplate/Screenshot (122).png", type: "image", alt: "GeniusPlate - View 4" },
-  { src: "/projects/geniusplate/Screenshot (123).png", type: "image", alt: "GeniusPlate - View 5" },
-  { src: "/projects/geniusplate/Screenshot (124).png", type: "image", alt: "GeniusPlate - View 6" },
-  { src: "/projects/geniusplate/Screenshot (125).png", type: "image", alt: "GeniusPlate - View 7" },
-],
+    media: [
+      { src: "/projects/geniusplate/Screenshot (119).png", type: "image", alt: "GeniusPlate - View 1" },
+      { src: "/projects/geniusplate/Screenshot (120).png", type: "image", alt: "GeniusPlate - View 2" },
+      { src: "/projects/geniusplate/Screenshot (121).png", type: "image", alt: "GeniusPlate - View 3" },
+      { src: "/projects/geniusplate/Screenshot (122).png", type: "image", alt: "GeniusPlate - View 4" },
+      { src: "/projects/geniusplate/Screenshot (123).png", type: "image", alt: "GeniusPlate - View 5" },
+      { src: "/projects/geniusplate/Screenshot (124).png", type: "image", alt: "GeniusPlate - View 6" },
+      { src: "/projects/geniusplate/Screenshot (125).png", type: "image", alt: "GeniusPlate - View 7" },
+    ],
   },
   {
     id: 2,
     title: "Sportrium",
     folder: "sportrium",
-    category: "Full Stack",
-    color: "gray",
-    description: "Pakistan's sports management platform connecting institutions, academies, colleges, local teams, and universities to host events and tournaments.",
-    longDescription: "Sportrium is a comprehensive sports ecosystem for Pakistan. It enables institutions, academies, colleges, universities, and local teams to create, manage, and participate in sports events and tournaments. Features include team registration, fixture scheduling, live score updates, and leaderboards.",
-    tech: ["MERN Stack", "Socket.io", "MongoDB", "React.js", "Node.js"],
+    category: "MERN Stack",
+    color: "green",
+    description: "Pakistan's sports management platform built on MERN Stack with RAG pipeline integration — connecting institutions, academies, colleges and universities to host tournaments.",
+    longDescription: "Sportrium is a comprehensive sports ecosystem for Pakistan built on the MERN Stack. It integrates a RAG (Retrieval-Augmented Generation) pipeline for intelligent match recommendations and tournament insights. Enables institutions, academies, colleges, universities, and local teams to create, manage, and participate in sports events and tournaments. Features include team registration, fixture scheduling, live score updates, and leaderboards.",
+    tech: ["MERN Stack", "RAG Pipeline", "Socket.io", "MongoDB", "React.js", "Node.js"],
     features: [
       "Multi-institution tournament hosting",
       "Team registration & bracket management",
       "Live score & fixture updates",
+      "RAG pipeline for intelligent recommendations",
       "Leaderboards & statistics",
       "Cross-platform: colleges, academies, local teams",
     ],
     github: "https://github.com/afeefarehan",
     live: "#",
     media: [
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.25 AM.jpeg", type: "image", alt: "Sportrium - View 1" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.26 AM.jpeg", type: "image", alt: "Sportrium - View 2" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.26 AM (1).jpeg", type: "image", alt: "Sportrium - View 3" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.26 AM (2).jpeg", type: "image", alt: "Sportrium - View 4" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.27 AM.jpeg", type: "image", alt: "Sportrium - View 5" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.27 AM (1).jpeg", type: "image", alt: "Sportrium - View 6" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.27 AM (2).jpeg", type: "image", alt: "Sportrium - View 7" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.27 AM (3).jpeg", type: "image", alt: "Sportrium - View 8" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.28 AM.jpeg", type: "image", alt: "Sportrium - View 9" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.28 AM (1).jpeg", type: "image", alt: "Sportrium - View 10" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.28 AM (2).jpeg", type: "image", alt: "Sportrium - View 11" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.29 AM.jpeg", type: "image", alt: "Sportrium - View 12" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.29 AM (1).jpeg", type: "image", alt: "Sportrium - View 13" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.29 AM (2).jpeg", type: "image", alt: "Sportrium - View 14" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.30 AM.jpeg", type: "image", alt: "Sportrium - View 15" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.30 AM (1).jpeg", type: "image", alt: "Sportrium - View 16" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.31 AM.jpeg", type: "image", alt: "Sportrium - View 17" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.31 AM (1).jpeg", type: "image", alt: "Sportrium - View 18" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.31 AM (2).jpeg", type: "image", alt: "Sportrium - View 19" },
-
-  { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.31 AM (3).jpeg", type: "image", alt: "Sportrium - View 20" },
-],
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.25 AM.jpeg", type: "image", alt: "Sportrium - View 1" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.26 AM.jpeg", type: "image", alt: "Sportrium - View 2" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.26 AM (1).jpeg", type: "image", alt: "Sportrium - View 3" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.26 AM (2).jpeg", type: "image", alt: "Sportrium - View 4" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.27 AM.jpeg", type: "image", alt: "Sportrium - View 5" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.27 AM (1).jpeg", type: "image", alt: "Sportrium - View 6" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.27 AM (2).jpeg", type: "image", alt: "Sportrium - View 7" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.27 AM (3).jpeg", type: "image", alt: "Sportrium - View 8" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.28 AM.jpeg", type: "image", alt: "Sportrium - View 9" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.28 AM (1).jpeg", type: "image", alt: "Sportrium - View 10" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.28 AM (2).jpeg", type: "image", alt: "Sportrium - View 11" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.29 AM.jpeg", type: "image", alt: "Sportrium - View 12" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.29 AM (1).jpeg", type: "image", alt: "Sportrium - View 13" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.29 AM (2).jpeg", type: "image", alt: "Sportrium - View 14" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.30 AM.jpeg", type: "image", alt: "Sportrium - View 15" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.30 AM (1).jpeg", type: "image", alt: "Sportrium - View 16" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.31 AM.jpeg", type: "image", alt: "Sportrium - View 17" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.31 AM (1).jpeg", type: "image", alt: "Sportrium - View 18" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.31 AM (2).jpeg", type: "image", alt: "Sportrium - View 19" },
+      { src: "/projects/sportrium/WhatsApp Image 2026-05-12 at 1.29.31 AM (3).jpeg", type: "image", alt: "Sportrium - View 20" },
+    ],
   },
   {
     id: 3,
@@ -365,25 +340,25 @@ export const projects = [
     ],
     github: "https://github.com/afeefarehan",
     live: "https://paletteandfit.site/",
-   media: [
-  { src: "/projects/palette-and-fit/Screenshot (111).png", type: "image", alt: "Palette & Fit - View 1" },
-  { src: "/projects/palette-and-fit/Screenshot (112).png", type: "image", alt: "Palette & Fit - View 2" },
-  { src: "/projects/palette-and-fit/Screenshot (113).png", type: "image", alt: "Palette & Fit - View 3" },
-  { src: "/projects/palette-and-fit/Screenshot (114).png", type: "image", alt: "Palette & Fit - View 4" },
-  { src: "/projects/palette-and-fit/Screenshot (115).png", type: "image", alt: "Palette & Fit - View 5" },
-  { src: "/projects/palette-and-fit/Screenshot (116).png", type: "image", alt: "Palette & Fit - View 6" },
-  { src: "/projects/palette-and-fit/Screenshot (117).png", type: "image", alt: "Palette & Fit - View 7" },
-],
+    media: [
+      { src: "/projects/palette-and-fit/Screenshot (111).png", type: "image", alt: "Palette & Fit - View 1" },
+      { src: "/projects/palette-and-fit/Screenshot (112).png", type: "image", alt: "Palette & Fit - View 2" },
+      { src: "/projects/palette-and-fit/Screenshot (113).png", type: "image", alt: "Palette & Fit - View 3" },
+      { src: "/projects/palette-and-fit/Screenshot (114).png", type: "image", alt: "Palette & Fit - View 4" },
+      { src: "/projects/palette-and-fit/Screenshot (115).png", type: "image", alt: "Palette & Fit - View 5" },
+      { src: "/projects/palette-and-fit/Screenshot (116).png", type: "image", alt: "Palette & Fit - View 6" },
+      { src: "/projects/palette-and-fit/Screenshot (117).png", type: "image", alt: "Palette & Fit - View 7" },
+    ],
   },
   {
     id: 4,
     title: "Industrax",
     folder: "industrax",
-    category: "Full Stack",
-    color: "gray",
-    description: "A professional industry-focused website built to showcase and connect industrial businesses, services, and clients.",
-    longDescription: "Industrax is a B2B-oriented web platform designed for the industrial sector. It provides a clean, professional interface for businesses to present their services, connect with clients, and manage their online presence effectively.",
-    tech: ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "Express.js"],
+    category: "MERN Stack",
+    color: "green",
+    description: "A professional industry-focused B2B platform built on MERN Stack to showcase and connect industrial businesses, services, and clients.",
+    longDescription: "Industrax is a B2B-oriented web platform built on the MERN Stack for the industrial sector. It provides a clean, professional interface for businesses to present their services, connect with clients, and manage their online presence effectively.",
+    tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
     features: [
       "Professional B2B service showcase",
       "Dynamic business listings",
@@ -393,14 +368,14 @@ export const projects = [
     ],
     github: "https://github.com/afeefarehan",
     live: "#",
-        media: [
-  { src: "/projects/industrax/Screenshot (155).png", type: "image", alt: "Pak Forces Info - View 1" },
-  { src: "/projects/industrax/Screenshot (156).png", type: "image", alt: "Pak Forces Info - View 2" },
-  { src: "/projects/industrax/Screenshot (157).png", type: "image", alt: "Pak Forces Info - View 3" },
-    { src: "/projects/industrax/Screenshot (158).png", type: "image", alt: "Pak Forces Info - View 1" },
-  { src: "/projects/industrax/Screenshot (159).png", type: "image", alt: "Pak Forces Info - View 2" },
-  { src: "/projects/industrax/Screenshot (160).png", type: "image", alt: "Pak Forces Info - View 3" },
-],
+    media: [
+      { src: "/projects/industrax/Screenshot (155).png", type: "image", alt: "Industrax - View 1" },
+      { src: "/projects/industrax/Screenshot (156).png", type: "image", alt: "Industrax - View 2" },
+      { src: "/projects/industrax/Screenshot (157).png", type: "image", alt: "Industrax - View 3" },
+      { src: "/projects/industrax/Screenshot (158).png", type: "image", alt: "Industrax - View 4" },
+      { src: "/projects/industrax/Screenshot (159).png", type: "image", alt: "Industrax - View 5" },
+      { src: "/projects/industrax/Screenshot (160).png", type: "image", alt: "Industrax - View 6" },
+    ],
   },
   {
     id: 5,
@@ -421,17 +396,17 @@ export const projects = [
     github: "https://github.com/afeefarehan",
     live: "#",
     media: [
-  { src: "/projects/pak-forces-info/Screenshot (151).png", type: "image", alt: "Pak Forces Info - View 1" },
-  { src: "/projects/pak-forces-info/Screenshot (152).png", type: "image", alt: "Pak Forces Info - View 2" },
-  { src: "/projects/pak-forces-info/Screenshot (153).png", type: "image", alt: "Pak Forces Info - View 3" },
-],
+      { src: "/projects/pak-forces-info/Screenshot (151).png", type: "image", alt: "Pak Forces Info - View 1" },
+      { src: "/projects/pak-forces-info/Screenshot (152).png", type: "image", alt: "Pak Forces Info - View 2" },
+      { src: "/projects/pak-forces-info/Screenshot (153).png", type: "image", alt: "Pak Forces Info - View 3" },
+    ],
   },
   {
     id: 6,
     title: "Atelier Cafe",
     folder: "atelier-cafe",
     category: "Frontend",
-    color: "gray",
+    color: "green",
     description: "An elegant, visually rich website for a premium café — featuring the menu, ambiance, reservations, and brand story.",
     longDescription: "Atelier Cafe is a beautifully crafted café website with a focus on aesthetics and user experience. Features include an interactive menu, gallery, reservation system, and brand storytelling — giving the café a premium digital presence.",
     tech: ["React.js", "Framer Motion", "Tailwind CSS", "Vite"],
@@ -445,13 +420,35 @@ export const projects = [
     github: "https://github.com/afeefarehan",
     live: "#",
     media: [
-  { src: "/projects/atelier-cafe/Screenshot (143).png", type: "image", alt: "Atelier Cafe - View 1" },
-  { src: "/projects/atelier-cafe/Screenshot (144).png", type: "image", alt: "Atelier Cafe - View 2" },
-  { src: "/projects/atelier-cafe/Screenshot (145).png", type: "image", alt: "Atelier Cafe - View 3" },
-  { src: "/projects/atelier-cafe/Screenshot (146).png", type: "image", alt: "Atelier Cafe - View 4" },
-  { src: "/projects/atelier-cafe/Screenshot (147).png", type: "image", alt: "Atelier Cafe - View 5" },
-  { src: "/projects/atelier-cafe/Screenshot (148).png", type: "image", alt: "Atelier Cafe - View 6" },
-  { src: "/projects/atelier-cafe/Screenshot (149).png", type: "image", alt: "Atelier Cafe - View 7" },
-],
+      { src: "/projects/atelier-cafe/Screenshot (143).png", type: "image", alt: "Atelier Cafe - View 1" },
+      { src: "/projects/atelier-cafe/Screenshot (144).png", type: "image", alt: "Atelier Cafe - View 2" },
+      { src: "/projects/atelier-cafe/Screenshot (145).png", type: "image", alt: "Atelier Cafe - View 3" },
+      { src: "/projects/atelier-cafe/Screenshot (146).png", type: "image", alt: "Atelier Cafe - View 4" },
+      { src: "/projects/atelier-cafe/Screenshot (147).png", type: "image", alt: "Atelier Cafe - View 5" },
+      { src: "/projects/atelier-cafe/Screenshot (148).png", type: "image", alt: "Atelier Cafe - View 6" },
+      { src: "/projects/atelier-cafe/Screenshot (149).png", type: "image", alt: "Atelier Cafe - View 7" },
+    ],
+  },
+  {
+    id: 7,
+    title: "Sign Language Translator",
+    folder: "sign-language",
+    category: "AI/ML",
+    color: "green",
+    description: "Real-time ASL hand gesture detection using CNN + MediaPipe — translates sign language into text and speech, trained on 87,000 images.",
+    longDescription: "An AI-powered Sign Language Detection and Speech Conversion System that detects American Sign Language (ASL) hand gestures through a webcam in real-time. Built using a custom CNN model trained on 87,000 images across 29 classes (A-Z + space + delete). MediaPipe handles hand landmark detection to isolate the hand region and ignore background noise. The system converts detected signs into text and supports sentence formation with delete and space gestures.",
+    tech: ["Python", "TensorFlow", "CNN", "MediaPipe", "OpenCV", "Keras", "NumPy"],
+    features: [
+      "Real-time ASL alphabet detection — A to Z (29 classes)",
+      "CNN model trained on 87,000 images with 95%+ accuracy",
+      "MediaPipe hand landmark detection — ignores background",
+      "Live webcam feed with auto bounding box around hand",
+      "Sentence formation with space & delete gestures",
+      "Text-to-speech conversion of detected signs",
+      "Confidence score displayed per prediction",
+    ],
+    github: "https://github.com/afeefarehan",
+    live: "#",
+    media: [],
   },
 ];
