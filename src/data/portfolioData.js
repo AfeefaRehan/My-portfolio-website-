@@ -429,8 +429,77 @@ export const projects = [
       { src: "/projects/atelier-cafe/Screenshot (149).png", type: "image", alt: "Atelier Cafe - View 7" },
     ],
   },
+   {
+  id: 7,
+  title: "Afeefa Rehan Portfolio",
+  folder: "afeefa-portfolio",
+  category: "Frontend",
+  color: "green",
+  description:
+    "Personal portfolio showcasing AI engineering, full stack development, prompt engineering, and deployed production work with a modern premium UI.",
+
+  longDescription:
+    "A fully responsive premium portfolio website built to represent professional experience, AI expertise, frontend engineering skills, and deployed projects. Designed with modern UI principles, smooth animations, elegant layouts, and optimized performance.",
+
+  tech: [
+    "React.js",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Vite",
+  ],
+
+  features: [
+    "Responsive premium UI",
+    "Modern portfolio architecture",
+    "Animated sections & transitions",
+    "Project showcase system",
+    "Professional deployment on Vercel",
+  ],
+
+  github: "https://github.com/afeefarehan",
+     live: "https://afeefa-portfolio.vercel.app/",
+    media: [
+      { src: "/projects/afeefa-portfolio/Screenshot (282).png", type: "image", alt: "Afeefa's Portfolio" },
+    ],
+  },
   {
-    id: 7,
+  id: 8,
+  title: "Amama Ali Portfolio",
+  folder: "amama-portfolio",
+  category: "Frontend",
+  color: "green",
+
+  description:
+    "Elegant portfolio website designed for Amama Ali featuring cybersecurity, AI, HR, frontend expertise, and premium responsive UI design.",
+
+  longDescription:
+    "A modern responsive portfolio crafted with a soft luxury aesthetic using Tailwind CSS and Framer Motion. Built to professionally represent skills, certifications, projects, and experience while maintaining smooth UX across all devices.",
+
+  tech: [
+    "React.js",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Vite",
+  ],
+
+  features: [
+    "Luxury modern interface",
+    "Fully responsive design",
+    "Animated interactive sections",
+    "Project showcase",
+    "Professional deployment ready",
+  ],
+
+  github: "https://github.com/afeefarehan",
+
+  live: "https://amama-ali-portfolio.vercel.app/",
+
+  media: [
+   { src: "/projects/amama-portfolio/Screenshot (283).png", type: "image", alt: "Amama's Portfolio View 1" },
+  ],
+},
+  {
+    id: 9,
     title: "Sign Language Translator",
     folder: "sign-language",
     category: "AI/ML",
@@ -451,4 +520,5 @@ export const projects = [
     live: "#",
     media: [],
   },
+ 
 ];
