@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaTimes, FaChevronLeft, FaChevronRight, FaFilePdf } from "react-icons/fa";
 import { HiCode } from "react-icons/hi";
 import { projects } from "../data/portfolioData";
 import { fadeUp, scaleIn, staggerContainer, staggerFast, viewportOnce } from "../animations/variants";
@@ -185,6 +185,12 @@ function ProjectModal({ project, onClose }) {
               <a href={project.live} target="_blank" rel="noreferrer"
                 className="btn-primary flex items-center gap-2 text-sm flex-1 justify-center">
                 <span className="flex items-center gap-2"><FaExternalLinkAlt size={11} /> Live Site</span>
+              </a>
+            )}
+            {project.slides && (
+              <a href={project.slides} target="_blank" rel="noreferrer"
+                className="btn-primary flex items-center gap-2 text-sm flex-1 justify-center">
+                <span className="flex items-center gap-2"><FaFilePdf size={12} /> View Slides</span>
               </a>
             )}
           </div>
