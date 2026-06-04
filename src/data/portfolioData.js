@@ -501,8 +501,9 @@ export const projects = [
         winner: "Linear Regression",
       },
     },
-   github: "https://github.com/AfeefaRehan/telco-churn-ml",
+    github: "https://github.com/AfeefaRehan/telco-churn-ml",
     live: "#",
+    slides: "/projects/telco-churn-ml/Telco_Churn_ML.pdf",
     media: [
       { src: "/projects/telco-churn-ml/classification_roc.png", type: "image", alt: "ROC curves — Logistic Regression vs KNN" },
       { src: "/projects/telco-churn-ml/regression_pred_vs_actual.png", type: "image", alt: "Predicted vs Actual — Linear Regression vs KNN" },
