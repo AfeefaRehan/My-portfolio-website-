@@ -314,12 +314,6 @@ export default function Projects() {
             })}
           </AnimatePresence>
         </motion.div>
-
-        {/* Instruction */}
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={viewportOnce}
-          className="mt-10 text-center p-5 rounded-xl border" style={{ borderColor: "rgba(57,197,87,0.2)", background: "rgba(57,197,87,0.04)" }}>
-      
-        </motion.div>
       </div>
 
       <AnimatePresence>
