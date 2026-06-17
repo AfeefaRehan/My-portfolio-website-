@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaTimes, FaChevronLeft, FaChevronRight, FaFilePdf } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaTimes, FaChevronLeft, FaChevronRight, FaFilePdf, FaDatabase } from "react-icons/fa";
 import { HiCode } from "react-icons/hi";
 import { projects } from "../data/portfolioData";
 import { fadeUp, scaleIn, staggerContainer, staggerFast, viewportOnce } from "../animations/variants";
@@ -193,6 +193,12 @@ function ProjectModal({ project, onClose }) {
                 <span className="flex items-center gap-2"><FaFilePdf size={12} /> View Slides</span>
               </a>
             )}
+            {project.dataset && (
+              <a href={project.dataset} target="_blank" rel="noreferrer"
+                className="btn-outline flex items-center gap-2 text-sm flex-1 justify-center">
+                <FaDatabase size={12} /> Dataset
+              </a>
+            )}
           </div>
         </div>
       </motion.div>
@@ -234,7 +240,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Grid */}
-        <motion.div variants={staggerFast} initial="hidden" whileInView="visible" viewport={viewportOnce}
+        <motion.div key={filter} variants={staggerFast} initial="hidden" animate="visible"
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimatePresence mode="popLayout">
             {filtered.map(project => {
