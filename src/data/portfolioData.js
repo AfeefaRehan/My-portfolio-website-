@@ -509,4 +509,43 @@ export const projects = [
       { src: "/projects/telco-churn-ml/regression_pred_vs_actual.png", type: "image", alt: "Predicted vs Actual — Linear Regression vs KNN" },
     ],
   },
+  {
+    id: 8,
+    title: "EuroSAT Satellite Land-Use Classification — CNN",
+    folder: "eurosat-cnn",
+    category: "AI/ML",
+    color: "green",
+    description: "A deep-learning CNN that classifies Sentinel-2 satellite imagery into 10 land-use types — 96.1% test accuracy, with a live web demo anyone can try.",
+    longDescription: "An end-to-end computer-vision project on the EuroSAT dataset (27,000 Sentinel-2 satellite images, 10 classes). The pipeline cleans the data (perceptual-hash duplicate removal), preprocesses and splits it, then trains an EfficientNetB0 transfer-learning model and fine-tunes it to 96.1% test accuracy. It matches a published reference paper's best result on a harder 10-class task (vs. their 4 classes), adding fine-tuning and data cleaning the paper did not use. Deployed as a live Gradio web app on Hugging Face where anyone can upload a satellite image and get an instant prediction.",
+    tech: ["Python", "TensorFlow/Keras", "EfficientNetB0", "Transfer Learning", "Gradio", "scikit-learn"],
+    features: [
+      "Cleaned 27,000 images (removed 223 near-duplicates) → 26,777 model-ready",
+      "EfficientNetB0 transfer learning + fine-tuning (94.2% → 96.1%)",
+      "10-class classification with per-class precision / recall / F1",
+      "Outperforms a published reference paper on a harder 10-class task",
+      "Live web demo deployed on Hugging Face Spaces (Gradio)",
+    ],
+    metrics: {
+      classification: {
+        title: "Results — 10-Class Land-Use Classification",
+        headers: ["Stage", "Test Accuracy", "Macro-F1"],
+        rows: [
+          ["Frozen transfer learning", "94.21%", "0.94"],
+          ["+ Fine-tuning", "96.10%", "0.96"],
+        ],
+        winner: "EfficientNetB0 + Fine-tuning",
+      },
+    },
+    github: "https://github.com/AfeefaRehan/eurosat-cnn",
+    live: "https://huggingface.co/spaces/Afeefarehan/eurosat-land-classifier",
+    dataset: "https://www.kaggle.com/datasets/apollo2506/eurosat-dataset",
+    media: [
+      { src: "/projects/eurosat-cnn/confusion_matrix_finetuned.png", type: "image", alt: "Confusion matrix — fine-tuned model (96.1%)" },
+      { src: "/projects/eurosat-cnn/training_curves_finetuned.png", type: "image", alt: "Training & validation accuracy / loss curves" },
+      { src: "/projects/eurosat-cnn/my_predictions.png", type: "image", alt: "Predictions on real Google Maps satellite imagery" },
+      { src: "/projects/eurosat-cnn/Screenshot 2026-06-18 022737.png", type: "image", alt: "Live demo — Hugging Face web app" },
+      { src: "/projects/eurosat-cnn/Screenshot 2026-06-18 022938.png", type: "image", alt: "Live demo — Highway prediction" },
+      { src: "/projects/eurosat-cnn/Screenshot 2026-06-18 023215.png", type: "image", alt: "Live demo — PermanentCrop prediction" },
+    ],
+  },
 ];
